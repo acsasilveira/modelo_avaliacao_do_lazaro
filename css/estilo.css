@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  :root {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --third: #c4c4c4;
+  }
+  header {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+  header div {
+    display: flex;
+    justify-content: space-between;
+  }
+  header a {
+    display: flex;
+    align-items: center;
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li a {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .content {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  main {
+    min-height: 80vh;
+  }
+  footer {
+    background-color: var(--primary);
+    height: 5rem;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  /* Specific for main HTML */
+  main section.main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0.5rem;
+    background-color: var(--secondary);
+    margin-top: 0.5rem;
+  }
+  main section.main div {
+    background-color: var(--third);
+    border: 0.2rem solid var(--primary);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  main.main section aside {
+    display: flex;
+    flex-direction: row;
+  }
+  /* Specific for pedidos HTML */
+  main.pedidos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main.pedidos section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  main.pedidos section h3 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  main.pedidos section form {
+    background-color: var(--third);
+    border: 0.2rem solid var(--primary);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  main.pedidos section form div {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  main.pedidos section form div label {
+    font-weight: bold;
+  }
+  main.pedidos section form div input {
+    border: 0;
+    border-radius: 0.2rem;
+  }
+  main.pedidos section form div textarea {
+    border: 0;
+    border-radius: 0.2rem;
+    height: 6rem;
+  }
+  main.pedidos section form button {
+    background-color: var(--secondary);
+    border: 0;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 30%;
+  }
+  
